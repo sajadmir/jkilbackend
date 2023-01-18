@@ -4,6 +4,7 @@ const mongoURI= process.env.DATABASE ||  "mongodb://127.0.0.1:27017/jkil?readPre
 const connectToMongo=()=>{
 mongoose.connect(mongoURI,()=>{
     console.log("Connected to mongo DB Successfully");
+    console.log(process.env.DATABASE)
     
 })
 
