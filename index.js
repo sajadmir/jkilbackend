@@ -13,6 +13,5 @@ app.use('/api/auth',require('./routes/auth'))
 app.use('/api/sale',require('./routes/sale'))
 
 app.listen(PORT, () => {
-  console.log(process.env.DATABASE)
   console.log(`JKIL Sales app listening on port ${PORT}`)
 })
